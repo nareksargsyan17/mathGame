@@ -1,90 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-body{
-    padding: 30px;
-    font-family: Arial;
-    background: #ddd;
+body {
+   font-family: Arial;
+   background-image: url("../img/blackboard-inscribed-with-scientific-formulas-and-calculations-in-mathematics-science-and-education-background-2GYBJM3.jpg");
 }
-
-/* #root {
-    max-width: 450px;
-    height: 550px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 8px;
-    background: #F0F0F0;
-}
-
-#root p {
-    color: #00628A;
-    font-size: 25px;
-    text-align: center;
-}
-
-#root #form {
-    display: flex;
-    margin: 10px;
-}
-
-#root #form #questionWindow {
-    padding: 15px;
-    border: 2px solid black;
-    width: 100%;
-}
-
-#root #form #answerWindow {
-    width: 100%;
-}
-
-#answerWindow input {
-    border: 1px solid blueviolet;
-}
-
-#answerWindow button {
-    border: none;
-    background: #F0AD4E;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 20px;
-    
-    width: 60%;
-}
-
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
- */
-
 
 #root {
+   display: none;
    max-width: 500px;
    height: auto;
    box-shadow: 1px 5px 10px #3A597A;
    border-radius: 8px;
-   margin: 0 auto;
+   margin: 20px auto;
    padding: 40px;
+   background-color: #fff
 }
 
 #root p {
-   color: #186e90;
+   color: #20818a;
    font-size: 35px;
    text-align: center;
-   margin: 10px;
+   margin-bottom: 30px;
 }
 
 #root #answerWindow {
-   background: #5f7c9b;
+   background: #20818a;
    padding: 10px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
+   border-radius: 15px
 }
 
 #root #answerWindow #result {
@@ -94,87 +44,115 @@ button:hover {
 }
 
 #root #answerWindow #result #userCount {
-    width: 100%;
-    font-size: 25px;
-    color: #4c1f69;
-    text-align: center;
-    
+   width: 100%;
+   font-size: 25px;
+   color: #ffffff;
+   text-align: center;
 }
 
 #root #answerWindow #result #userCount #counter {
    border: none;
-   background: #a9c6c9;
+   background: #ffffff;
    color: rgb(0, 0, 0);
-   border-radius: 3px;
+   border-radius: 20%;
+   padding: 8px;
    font-size: 30px;
    width: 60px;
    margin: 10px auto;
    text-align: center;
 }
+
 #root #answerWindow #result #userCount #correctAnswer1 {
-    display: block;
-    height: 32px;
-    text-align: center;
-    font-size: 32px;
-    color: rgb(128, 0, 0);
-    transition: 1s;
-    opacity: 0;
- }
-#root #answerWindow #result #userCount #correctAnswer {
-    display: block;
-    height: 32px;
-    text-align: center;
-    font-size: 32px;
-    color: green;
-    transition: 1s;
-    opacity: 0;
+   display: block;
+   height: 32px;
+   text-align: center;
+   font-size: 32px;
+   color: rgb(128, 0, 0);
+   transition: 1s;
+   opacity: 0;
 }
 
-
+#root #answerWindow #result #userCount #correctAnswer {
+   display: block;
+   height: 32px;
+   text-align: center;
+   font-size: 32px;
+   color: green;
+   transition: 1s;
+   opacity: 0;
+}
 
 #root #answerWindow #questionWindow {
-   width: 100%;
+   width: 60%;
    height: 100px;
    text-align: center;
    padding: 30px 0px;
    font-size: 40px;
-   color: #2b7a45;
+   color: black;
    background: #fff;
+   margin: 20px auto 0px auto;
+   border-radius: 20px;
 }
 
 #root #form {
    width: 100%;
    height: 180px;
    padding: 20px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center
 }
- 
+
 #form input {
-   height: 40px;
-   border: 2px solid #333;
+   height: 60px;
+   border: none;
    border-radius: 5px;
    outline: none;
-   width: 100%;
+   width: 60%;
+   padding: 15px 10px;
+   border-radius: 10px;
+   font-size: 30px;
+   text-align: center;
+}
+
+#form input::-webkit-outer-spin-button,
+#form input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
 }
 
 #form button {
    border: none;
-   background: #136B73;
+   background: #0b5b62;
    color: #fff;
    border-radius: 5px;
    font-size: 20px;
    width: 50%;
    height: 40px;
-   margin: 30px;
-   position: relative;
-   left: 75px;
-   justify-content: center;
+   margin: 20px;
    box-shadow: 1px 5px 10px #34495e;
-   
-   
+
+
 }
 
 #form button:hover {
-    cursor: pointer;
-    background-color:#163f6b;
+   cursor: pointer;
+   background-color: #04444a;
 }
- 
+
+#end {
+   display: none;
+   width: 300px;
+   height: 200px;
+   border-radius: 15px;
+   background-color: #0b5b62;
+   padding: 20px;
+   margin: 250px auto;
+   font-size: 35px;
+   text-align: center;
+   color: white;
+   box-shadow: 1px 5px 10px #19737b;
+}
+
+#end>p {
+   margin: 20px;
+}
